@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite Web Design</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- ✨ Modern Navbar -->
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="index.html" class="text-2xl font-extrabold">🌐 Exquisite Web</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-400  font-bold text-lg transition">Home</a></li>
+                <li><a href="about1.html" class="hover:text-blue-400 font-bold text-lg  transition">About</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-400 font-bold text-lg transition">Works</a></li>
+                <li><a href="#packages" class="hover:text-blue-400 font-bold text-lg transition">Packages</a></li>
+                <li><a href="#contact-form" class="hover:text-blue-400 font-bold text-lg  transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  
+
+
+<!-- 🌟 Hero Section with Background Image -->
+<section id="home" class="relative flex items-center justify-center h-screen bg-cover bg-center bg-no-repeat"
+    style="background-image: url('hero-image.jpg');">
+    
+    <!-- 🔲 Translucent Text Box -->
+    <div class="bg-black bg-opacity-80 p-10 rounded-lg max-w-2xl text-center">
+        <h1 class="text-5xl font-extrabold text-white">Crafting Digital Masterpieces</h1>
+        <p class="mt-4 text-xl text-gray-300">
+            Our cutting-edge designs blend innovation with functionality, ensuring a seamless user experience, 
+            stunning visuals, and powerful performance.
+        </p>
+        
+        <!-- 🖱️ Get Started Button -->
+        <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 font-bold px-6 py-3 rounded-md hover:bg-gray-200 transition">
+            Get Started 🚀
+        </a>
+    </div>
+</section>
+
+
+    <!-- 🌟 Services Section -->
+    <!-- 🌟 Services Section -->
+<section id="packages" class="py-16 text-center">
+    <h2 class="text-4xl font-extrabold mb-8">Our Exquisite Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+
+        <!-- Basic Package -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold">🌱 Basic Package</h3>
+            <p class="text-gray-300 text-xl mt-2">Perfect for: Personal portfolios, freelancers, and small businesses starting online.</p>
+            <button onclick="toggleDetails('basic')" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Learn More</button>
+            <div id="basic" class="hidden mt-4 text-gray-300">
+                <ul class="text-left text-lg space-y-2">
+                    <li>✅ Sleek, modern one-page design with smooth scrolling</li>
+                    <li>✅ Fully responsive on mobile, tablet, and desktop</li>
+                    <li>✅ Fast-loading & optimized for speed and performance</li>
+                    <li>✅ Integrated contact form for customer inquiries</li>
+                    <li>✅ Social media links to connect with your audience</li>
+                    <li>✅ Basic SEO setup to help your site appear on Google</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Standard Package -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold">🚀 Standard Package</h3>
+            <p class="text-gray-300 text-xl mt-2">Perfect for: Small to medium businesses, agencies, and startups needing multiple pages.</p>
+            <button onclick="toggleDetails('standard')" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Learn More</button>
+            <div id="standard" class="hidden mt-4 text-gray-300">
+                <ul class="text-left text-lg space-y-2">
+                    <li>✅ Up to 5 custom-designed pages.</li>
+                    <li>✅ SEO-optimized content to rank higher on search engines</li>
+                    <li>✅ Mobile-first design ensuring a seamless user experience across devices</li>
+                    <li>✅ Interactive elements (buttons, hover effects, and animations)</li>
+                    <li>✅ Custom contact & inquiry forms for lead generation</li>
+                    <li>✅ Google Maps integration to show business location</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- 💼 Premium Package -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold">💼 Premium Package</h3>
+            <p class="text-gray-300 text-xl mt-2">Perfect for:</strong> Businesses selling products or services online, including retail.</p>
+            <button onclick="toggleDetails('premium')" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Learn More</button>
+            <div id="premium" class="hidden mt-4 text-gray-300">
+                <ul class="text-left text-lg space-y-2">
+                    <li>✅ Full e-commerce setup (cart, checkout, products)</li>
+                    <li>✅ Secure payment gateway </li>
+                    <li>✅ AI-powered chatbots for customer support</li>
+                    <li>✅ SEO & marketing tools (Google Analytics, Facebook Pixel)</li>
+                    <li>✅ Dynamic product search & filtering</li>
+                    <li>✅ Automated email notifications</li>
+                    <li>✅ User account management & order tracking</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 🏢 Enterprise Package -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold">🏢 Enterprise Package</h3>
+            <p class="text-gray-300 text-lg mt-2">Large businesses, corporations, and organizations requiring complex, high-performance web solutions.</p>
+            <button onclick="toggleDetails('enterprise')" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Learn More</button>
+            <div id="enterprise" class="hidden mt-4 text-gray-300">
+                <ul class="text-left  text-lg space-y-2">
+                    <li>✅ Unlimited custom pages</li>
+                    <li>✅ High-speed, scalable hosting</li>
+                    <li>✅ Advanced security (SSL, firewalls, multi-layer protection)</li>
+                    <li>✅ AI-powered automation (CRM, chatbots, lead generation)</li>
+                    <li>✅ Multi-user access & admin dashboards</li>
+                    <li>✅ Third-party API integrations (Payment, CRM, Analytics)</li>
+                    <li>✅ Custom-tailored web applications</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- 🎨 Portfolio Section -->
+    <section id="portfolio" class="bg-gray-800 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-8">Our Masterpieces</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">📊 Business Website</h3>
+                <p class="text-gray-300">Sleek, professional, and optimized for success.</p>
+                <a href="#" class="mt-4 block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">View Live</a>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">🚀 Startup Landing Page</h3>
+                <p class="text-gray-300">High-converting, engaging startup pages.</p>
+                <a href="#" class="mt-4 block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">View Live</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📩 Contact Form -->
+   <!-- 📞 Call to Action Section -->
+<section id="contact" class="bg-blue-600 py-16 text-center">
+    <h2 class="text-3xl font-bold">Ready to Elevate Your Business?</h2>
+    <p class="text-lg mt-4">Contact us today and let's build something amazing together.</p>
+    
+    <!-- Button to Toggle Contact Info -->
+    <button onclick="toggleContact()" class="mt-6 bg-white text-blue-600 font-bold px-6 py-3 rounded-lg hover:bg-gray-200 transition">
+        Get in Touch 📞
+    </button>
+
+    <!-- 📩 Hidden Contact Info (Initially Hidden) -->
+    <div id="contact-info" class="hidden mt-6 bg-gray-800 text-white p-6 rounded-lg max-w-md mx-auto">
+        <p class="text-lg"><strong>📧 Email:</strong> web.sidehustle2025@gmail.com</p>
+        <p class="text-lg"><strong>📞 Phone:</strong> 📌91+8130197722</p>
+        
+    </div>
+</section>
+<script>function toggleContact() {
+    let contactInfo = document.getElementById("contact-info");
+    contactInfo.classList.toggle("hidden");
+}
+</script>
+
+
+      
+
+    <section class="bg-blue-600 text-white py-12 flex justify-center">
+        <div class="w-full max-w-lg bg-gray-800 p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4 text-center">📩 Get in Touch</h2>
+            <p class="text-center mb-6 text-gray-300">We'd love to hear from you! Fill out the form and let's build something amazing together.</p>
+
+            <form id="contact-form" action="https://formspree.io/f/mvgzebvo" method="POST">
+                <div class="mb-4 relative">
+                    <input type="text" name="name" id="name" placeholder="Your Name"
+                        class="w-full p-3 text-black rounded-lg border border-gray-700 bg-gray-100 focus:border-blue-500 outline-none">
+                    <i class="absolute left-3 top-4 text-gray-400 fas fa-user"></i>
+                </div>
+
+                <div class="mb-4 relative">
+                    <input type="email" name="email" id="email" placeholder="Your Email"
+                        class="w-full p-3 text-black rounded-lg border border-gray-700 bg-gray-100 focus:border-blue-500 outline-none">
+                    <i class="absolute left-3 top-4 text-gray-400 fas fa-envelope"></i>
+                </div>
+
+                <div class="mb-4 relative">
+                    <textarea name="message" id="message" placeholder="Your Message"
+                        class="w-full p-3 text-black rounded-lg border border-gray-700 bg-gray-100 focus:border-blue-500 outline-none"></textarea>
+                    <i class="absolute left-3 top-4 text-gray-400 fas fa-comment"></i>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-lg transition duration-300">
+                    Send Message 🚀
+                </button>
+            </form>
+
+            <p id="form-status" class="mt-4 text-center font-semibold"></p>
+        </div>
+    </section>
+
+    <!-- 🎯 JavaScript for Form Validation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () { 
+            const form = document.getElementById("contact-form");
+            const status = document.getElementById("form-status");
+
+            form.addEventListener("submit", async function (event) {
+                event.preventDefault(); // Prevent page reload
+
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                // 🎯 Basic Validation
+                if (name === "" || email === "" || message === "") {
+                    showStatus("⚠️ Please fill out all fields.", "error");
+                    return;
+                }
+
+                if (!validateEmail(email)) {
+                    showStatus("⚠️ Please enter a valid email address.", "error");
+                    return;
+                }
+
+                // 🚀 Show "Sending..." Message
+                showStatus("⏳ Sending message...", "loading");
+
+                // 📩 Send Form Data to Formspree
+                let formData = new FormData(form);
+                try {
+                    let response = await fetch(form.action, {
+                        method: "POST",
+                        body: formData,
+                        headers: { "Accept": "application/json" }
+                    });
+
+                    if (response.ok) {
+                        showStatus("✅ Message Sent Successfully!", "success");
+                        form.reset(); // Clear form after submission
+                    } else {
+                        showStatus("❌ Something went wrong. Try again!", "error");
+                    }
+                } catch (error) {
+                    showStatus("❌ Error sending message.", "error");
+                }
+            });
+
+            // 🎯 Validate Email Format
+            function validateEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+
+            // 🎨 Function to Show Status Messages
+            function showStatus(message, type) {
+                status.innerHTML = message;
+                status.style.color = type === "error" ? "red" : type === "success" ? "green" : "orange";
+            }
+        });
+    </script>
+
+   <!-- 🌍 Footer -->
+   <footer class="bg-gray-700 py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-700">
+        <!-- Left Section - Logo & Description -->
+        <div class="col-span-2">
+            <div class="flex items-center space-x-2">
+                 <!-- Replace with your logo -->
+                <span class="text-lg font-extrabold text-white"> 🌐Exquisite Web</span>
+            </div>
+            <p class="mt-4 text-sm text-white">
+                At Exquisite Web, we craft AI-driven, high-performance websites that blend innovation, 
+                speed, and stunning design to help businesses grow and succeed online.
+            </p>
+        </div>
+
+        <!-- Middle Section - Our Services -->
+        <div>
+            <h3 class="font-semibold text-white">Our Services</h3>
+            <ul class="mt-2 space-y-2 text-sm text-white">
+                <li><a href="about1.html/#innovation" class="hover:underline">AI-Powered Web Design</a></li>
+                <li><a href="about1.html/#innovation" class="hover:underline">Responsive UX/UI</a></li>
+                <li><a href="about1.html/#innovation" class="hover:underline">SEO & Performance Optimization</a></li>
+                <li><a href="about1.html/#innovation" class="hover:underline">Lightning-Fast Web Hosting</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Section - Resources & Follow -->
+        <div>
+            <h3 class="font-semibold text-white">Resources</h3>
+            <ul class="mt-2 space-y-2 text-sm text-white">
+                <li><a href="https://web.dev/case-studies" target="_blank"  class="hover:underline">Case Studies</a></li>
+                <li><a href="https://css-tricks.com/"  target="_blank"  class="hover:underline">Web Development Tips</a></li>
+                <li><a href="https://web.dev/performance" target="_blank" class="hover:underline">Performance Insights</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="font-semibold text-white">Follow Us</h3>
+            <ul class="mt-2 space-y-2 text-sm text-white">
+                <li><a href="#" class="hover:underline">Twitter</a></li>
+                <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                <li><a href="https://github.com/Aarjav-998" class="hover:underline">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+  
+        <div class="flex space-x-4">
+            <a href="#" class="hover:underline">Terms</a>
+            <span>|</span>
+            <a href="#" class="hover:underline">Privacy</a>
+        </div>
+        <!-- Language Selector -->
+        <div class="relative mt-4 md:mt-0">
+            <select class="bg-transparent text-white border border-gray-400 rounded px-3 py-1 cursor-pointer">
+                <option>Language</option>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+            </select>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- ✅ JavaScript -->
+    <script>
+        function toggleDetails(id) {
+            document.getElementById(id).classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+</html>

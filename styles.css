@@ -1,0 +1,11 @@
+#home {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 1920px) {
+    #home {
+        background-size: 100% auto; /* Prevents over-stretching */
+    }
+}
