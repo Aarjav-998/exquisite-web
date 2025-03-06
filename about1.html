@@ -10,18 +10,31 @@
 <body class="bg-gray-900 text-white">
 
     <!-- 🔗 Navbar -->
-    <nav class="bg-gray-800 py-4">
-        <div class="container mx-auto flex justify-between items-center px-6">
-            <a href="index.html" class="text-2xl font-extrabold">🌐 Exquisite Web </a>
-            <ul class="flex space-x-6">
-                <li class="nav-item"><a href="index.html" class="hover:text-blue-400 text-lg font-bold transition"><i class="fas fa-home"></i> Home</a></li>
-                <li class="nav-item"><a href="about1.html" class="hover:text-blue-400 text-lg font-bold transition"><i class="fas fa-info-circle"></i> About</a></li>
-                <li class="nav-item"><a href="index.html#portfolio" class="hover:text-blue-400 text-lg font-bold transition">Works</a></li>
-                <li class="nav-item"><a href="index.html#packages" class="hover:text-blue-400 text-lg font-bold transition">Packages</a></li>
-                <li class="nav-item"><a href="#contact-form" class="hover:text-blue-400 text-lg font-bold transition">Contact</a></li>
-            </ul>
-        </div>
+
+
+    <nav class="flex items-center justify-between px-4 py-2 bg-gray-800 text-white">
+        <a href="index.html" class="text-2xl font-extrabold">🌐 Exquisite Web</a>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white text-2xl" id="menu-btn">☰</button>
+    
+        <!-- Navbar Links -->
+        <ul class="hidden md:flex gap-6 text-lg" id="menu">
+            <li><a href="index.html" class="hover:text-blue-400  font-bold text-lg transition">Home</a></li>
+                <li><a href="about1.html" class="hover:text-blue-400 font-bold text-lg  transition">About</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-400 font-bold text-lg transition">Works</a></li>
+                <li><a href="#packages" class="hover:text-blue-400 font-bold text-lg transition">Packages</a></li>
+                <li><a href="#contact-form" class="hover:text-blue-400 font-bold text-lg  transition">Contact</a></li>
+        </ul>
     </nav>
+    
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function() {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
 
     <!-- ✨ About Us Hero Section -->
     <section class="relative bg-cover bg-center py-20" style="background-image: url('contact.jpg');">
