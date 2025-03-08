@@ -1,12 +1,4 @@
 User-agent: *
 Disallow:
 
-# ✅ Allow Google to crawl everything
-Allow: /
-
-# ✅ Prevent unnecessary form data indexing
-Disallow: /form/
-Disallow: /admin/
-
-# ✅ Point to your sitemap
 Sitemap: https://aarjav-998.github.io/exquisite-web/sitemap.xml
