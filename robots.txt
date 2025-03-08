@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://aarjav-998.github.io/exquisite-web/sitemap.xml
